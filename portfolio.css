@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'FiraCode';
+    src: url('fonts/FiraCode-Bold.ttf');
+}
+
+body {
+    background-color: hsl(244, 73%, 4%);
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='20' style='fill:white;'><circle cx='5' cy='5' r='5'/></svg>"), auto;
+}
+
+header {
+    font-size: 3em;
+    font-family: 'FiraCode', monospace;
+    border: 1px solid hsl(0, 0%, 0%, 20%);
+    text-align: center;
+    color: lavenderblush;
+    background-color: hsla(247, 67%, 30%, 0.2);
+    width: auto;
+    height: 100px;
+    padding: 3%;
+    margin: 100px 0 0 0;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+main {
+    color: rgb(133, 245, 245);
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'FiraCode', monospace;
+    padding: 10px;
+    margin: 40px;
+    margin-bottom: 80px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    background-color: rgba(19, 11, 79, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(42, 205, 255, 0.409);
+    width: 380px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='20' style='fill:black;'><circle cx='5' cy='5' r='5'/></svg>"), auto;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 20px;
+    opacity: 0.5;
+    transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+        height 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+        opacity 0.45s ease;
+}
+
+.box:hover {
+    width: 450px;
+    height: 450px;
+    opacity: 1;
+    background-color: rgba(52, 52, 255, 0.941);
+}
+
+.box-title {
+    font-size: 2.5em;
+    color: rgb(36, 152, 247);
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.reveal-text {
+    opacity: 0;
+    width: 90%;
+    font-size: 1.3em;
+    color: white;
+    margin-top: 10px;
+    transition: opacity 0.3s ease, transform 0.4s ease;
+    transform: translateY(10px);
+    pointer-events: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box:hover .reveal-text {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 25px;
+    background-color: rgb(0, 10, 90);
+    border: 1px groove rgb(6, 2, 59);
+    color: rgb(36, 152, 247);
+    border-radius: 12px;
+    font-size: 0.7em;
+    text-decoration: none;
+    font-family: 'FiraCode', monospace;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.more-btn:hover {
+    background-color: lightblue;
+    color: rgb(55, 154, 247);
+    box-shadow: 0 0 10px rgba(0, 52, 94, 0.5);
+}
+
+.reveal-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.reveal-text li {
+    margin-bottom: 5px;
+    color: rgb(121, 220, 248);
+}
+
+.box:hover .box-title {
+    transform: translateY(-5px);
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
