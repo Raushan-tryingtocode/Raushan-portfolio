@@ -13,7 +13,7 @@ header {
     font-family: 'FiraCode', monospace;
     border: 1px solid hsl(0, 0%, 0%, 20%);
     text-align: center;
-    color: lavenderblush;
+    color: rgb(128, 249, 253);
     background-color: hsla(247, 67%, 30%, 0.2);
     width: auto;
     height: 100px;
