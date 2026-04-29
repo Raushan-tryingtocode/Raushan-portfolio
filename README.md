@@ -1,7 +1,8 @@
 # 🌐 Personal Portfolio
 A high-fidelity, brutalist engineering portfolio designed for the Python 3.14 era. This project is a technical manifesto and showcase of low-level infrastructure work, AI integration, and open-source contributions.
+---
 
-### 🔗 [Live Deployment ↗](https://raushan-portfolio.onrender.com)
+### 🔗 [Live Deployment ↗](https://mrhdev.vercel.app)
 
 ---
 
