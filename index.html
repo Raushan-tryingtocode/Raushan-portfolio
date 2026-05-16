@@ -264,70 +264,63 @@ container.addEventListener('mouseleave', () => {
                     <span class="marquee-item">ARCH LINUX</span>
                 </div>
             </div>
+<section class="px-6 lg:px-24 py-32 border-b border-b-[#333]">
+    <div class="grid md:grid-cols-2 gap-16">
+        <div>
+            <h2 class="text-5xl md:text-6xl font-bold uppercase tracking-tighter mb-8 reveal">
+                The Manifesto
+            </h2>
+            <p class="text-[#888] text-lg leading-relaxed mb-6 reveal">
+                I build for scale. Currently contributing to the
+                <span class="text-white">Wikimedia Foundation</span>
+                via Pywikibot, with emerging contributions to
+                <span class="text-white">The Linux Foundation</span>.
+                My focus is on test suite optimization, knowledge
+                graph automation and the modernization of legacy
+                scripts.
+            </p>
+            <a href="https://gerrit.wikimedia.org/r/q/owner:Raushan31+(status:open+OR+status:merged)"
+               target="_blank"
+               class="text-brand hover:text-white font-mono underline underline-offset-8 transition-colors reveal">
+                View my Gerrit Patches
+            </a>
+        </div>
 
-            <section class="px-6 lg:px-24 py-32 border-b border-[#333]">
-                <div class="grid md:grid-cols-2 gap-16">
-                    <div>
-                        <h2
-                            class="text-5xl md:text-6xl font-bold uppercase tracking-tighter mb-8 reveal">The
-                            Manifesto</h2>
-                        <p
-                            class="text-[#888] text-lg leading-relaxed mb-6 reveal">
-                            I build for scale. Currently contributing to the
-                            <span class="text-white">Wikimedia Foundation</span>
-                            via Pywikibot, with emerging contributions to
-                            <span class="text-white">The Linux
-                                Foundation</span>.
-                            My focus is on test suite optimization, knowledge
-                            graph automation and the modernization of legacy
-                            scripts.
-
-                        </p>
-                        <a
-                            href="https://gerrit.wikimedia.org/r/q/owner:Raushan31+(status:open+OR+status:merged)"
-                            target="_blank"
-                            class="text-brand hover:text-white font-mono underline underline-offset-8 transition-colors reveal ">
-                            View my Gerrit Patches
-                        </a>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-4 reveal">
-                        <div
-                            class="bg-surface p-8 border border-[#333] hover:border-brand transition-colors">
-                            <div
-                                class="text-4xl font-bold text-brand mb-2">5</div>
-                            <div
-                                class="text-xs uppercase tracking-widest text-[#888]">Merged
-                                PRs</div>
-                        </div>
-                        <div
-                            class="bg-surface p-8 border border-[#333] hover:border-brand transition-colors">
-                            <div
-                                class="text-4xl font-bold text-white mb-2">2</div>
-                            <div
-                                class="text-xs uppercase tracking-widest text-[#888]">In
-                                Review</div>
-                    <div class="bg-surface p-8 border border-[#333] col-span-2"></div>
+        <div class="flex flex-col gap-4 reveal">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-surface p-8 border border-[#333] hover:border-brand transition-colors">
+                    <div class="text-4xl font-bold text-brand mb-2">5</div>
+                    <div class="text-xs uppercase tracking-widest text-[#888]">Merged PRs</div>
                 </div>
-                            <div class="font-bold text-white mb-2 uppercase tracking-wide">
-        Migrating & Cleaning Up Legacy Scripts
+                <div class="bg-surface p-8 border border-[#333] hover:border-brand transition-colors">
+                    <div class="text-4xl font-bold text-white mb-2">2</div>
+                    <div class="text-xs uppercase tracking-widest text-[#888]">In Review</div>
+                </div>
+            </div>
+
+            <div class="bg-surface p-8 border border-[#333] hover:border-brand transition-colors">
+                <div class="font-bold text-white mb-2 uppercase tracking-wide">
+                    Migrating & Cleaning Up Legacy Scripts
+                </div>
+                <div class="text-sm text-[#888] mb-4 leading-relaxed">
+                    Moved the <code class="text-brand bg-black px-2 py-1">spellcheck.py</code> script 
+                    out of the old legacy setup and completely rewrote it for the modern 
+                    <span class="text-white font-medium">Pywikibot (Wikimedia Foundation)</span> core framework. 
+                    Cleaned up old syntax for Python 3, added a new custom execution flag (`-p`), and fixed the linting. 
+                    Currently leading a discussion with core maintainers on Phabricator to finalize the architectural design.
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://gerrit.wikimedia.org/r/c/pywikibot/core/+/1246857" 
+                       target="_blank" 
+                       class="inline-flex items-center text-xs font-bold text-brand uppercase tracking-wider hover:underline gap-1">
+                        View Gerrit Patch
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="text-sm text-[#888] mb-4">
-        Moved the <code class="text-brand bg-black px-2 py-1">spellcheck.py</code> script 
-        out of the old legacy setup and completely rewrote it for the modern 
-        <span class="text-white font-medium">Pywikibot (Wikimedia Foundation)</span> core framework. 
-        Cleaned up old syntax for Python 3, added a new custom execution flag (`-p`), and fixed the linting. 
-        Currently leading a discussion with core maintainers on Phabricator to finalize the architectural design.
-    </div>
-    <div class="flex gap-4">
-        <a href="https://gerrit.wikimedia.org/r/c/pywikibot/core/+/1246857" 
-           target="_blank" 
-           class="inline-flex items-center text-xs font-bold text-brand uppercase tracking-wider hover:underline gap-1">
-            View Gerrit Patch
-        </a>
-    </div>
-</div>
-            </section>
+</section>
+
 
             <section id="projects" class="px-6 lg:px-24 py-32 bg-surface">
                 <div class="flex justify-between items-end mb-16 reveal">
