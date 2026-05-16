@@ -307,27 +307,25 @@ container.addEventListener('mouseleave', () => {
                             <div
                                 class="text-xs uppercase tracking-widest text-[#888]">In
                                 Review</div>
-                    </div>
-                        <div class="bg-surface p-8 border border-[#333] col-span-2">
-                            <div class="font-bold text-white mb-2 uppercase tracking-wide">
-                                Core Script Migration & Refactoring
-                            </div>
-                        <div class="text-sm text-[#888] mb-4">
-                            Migrated and modernized 
-                            <code class="text-brand bg-black px-2 py-1">spellcheck.py</code> 
-                                from legacy frameworks to the core architecture of the 
-                                <span class="text-white font-medium">Wikimedia Foundation (Pywikibot)</span>. 
-                                Implemented automated PEP 8 compliance parsing and custom execution parameters.
-                        </div>
-                        <a href="https://gerrit.wikimedia.org/r/c/pywikibot/core/+/1246857" 
-                        target="_blank" 
-                        class="inline-flex items-center text-xs font-bold text-brand uppercase tracking-wider hover:underline gap-1">
-                            View Production Patch 
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 2 0 00-2 2v10a2 2 2 0 002 2h10a2 2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                        </a>
-                  </div>
+                    <div class="bg-surface p-8 border border-[#333] col-span-2">
+    <div class="font-bold text-white mb-2 uppercase tracking-wide">
+        Migrating & Cleaning Up Legacy Scripts
+    </div>
+    <div class="text-sm text-[#888] mb-4">
+        Moved the <code class="text-brand bg-black px-2 py-1">spellcheck.py</code> script 
+        out of the old legacy setup and completely rewrote it for the modern 
+        <span class="text-white font-medium">Pywikibot (Wikimedia Foundation)</span> core framework. 
+        Cleaned up old syntax for Python 3, added a new custom execution flag (`-p`), and fixed the linting. 
+        Currently leading a discussion with core maintainers on Phabricator to finalize the architectural design.
+    </div>
+    <div class="flex gap-4">
+        <a href="https://gerrit.wikimedia.org/r/c/pywikibot/core/+/1246857" 
+           target="_blank" 
+           class="inline-flex items-center text-xs font-bold text-brand uppercase tracking-wider hover:underline gap-1">
+            View Gerrit Patch
+        </a>
+    </div>
+</div>
                   
                     </div>
                 </div>
